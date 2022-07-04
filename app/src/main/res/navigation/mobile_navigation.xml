@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_news_home">
+
+    <fragment
+        android:id="@+id/navigation_news_home"
+        android:name="com.bootcamp.soccernews.ui.fragments.home.NewsFragment"
+        android:label="@string/title_news"
+        tools:layout="@layout/fragment_news" >
+        <action
+            android:id="@+id/action_navigation_news_home_to_navigation_page_news"
+            app:destination="@id/navigation_page_news" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_favorite_news"
+        android:name="com.bootcamp.soccernews.ui.fragments.Favorite.FavoritesFragment"
+        android:label="@string/title_favorites"
+        tools:layout="@layout/fragment_favorites" >
+        <action
+            android:id="@+id/action_navigation_favorite_news_to_navigation_page_news"
+            app:destination="@id/navigation_page_news" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_page_news"
+        android:name="com.bootcamp.soccernews.ui.fragments.pageNews.PageNewsFragment"
+        android:label="@string/title_page_news"
+        tools:layout="@layout/page_news_fragment" />
+
+</navigation>

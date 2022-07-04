@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Soccer News</string>
+
+    <string name="title_news">News</string>
+    <string name="title_favorites">Favorites</string>
+
+    <!-- Content Description in card-->
+    <string name="content_description_image_card">The image in the card with images of news</string>
+    <string name="content_description_image_share">The button for share the new</string>
+    <string name="content_description_image_favorite">The button favorite the new</string>
+    <!-- Card News -->
+    <string name="btn_open_link_news">Open Link</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_page_news">News</string>
+
+</resources>
