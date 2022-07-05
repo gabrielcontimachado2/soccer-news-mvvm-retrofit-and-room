@@ -66,10 +66,12 @@ class NewsFragment : Fragment() {
 
     }
 
+
     private fun setupViewModel() {
         val newsRepository = NewsRepository()
         val viewModelProviderFactory = NewsViewModelProviderFactory(newsRepository)
-        viewModel = ViewModelProvider(this, viewModelProviderFactory)[NewsViewModel::class.java]
+        viewModel =
+            ViewModelProvider(this, viewModelProviderFactory)[NewsViewModel::class.java]
 
     }
 
@@ -78,11 +80,11 @@ class NewsFragment : Fragment() {
 
         val newsRecyclerView: RecyclerView = binding.recyclerNews
 
-        newsRecyclerView.setHasFixedSize(true)
-        newsRecyclerView.layoutManager = LinearLayoutManager(context)
-        newsRecyclerView.adapter = newsAdapter
-
-
+        newsRecyclerView.apply {
+            setHasFixedSize(true)
+            layoutManager = LinearLayoutManager(context)
+            adapter = newsAdapter
+        }
     }
 
     private fun hideProgress() {

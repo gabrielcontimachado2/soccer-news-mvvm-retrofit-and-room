@@ -12,4 +12,7 @@ class NewsRepository(
     suspend fun getGeneralNewsBrasil() =
         RetrofitInstance.api.getGeneralNewsBrasil()
 
+    suspend fun searchForNews(searchQuery: String) =
+        RetrofitInstance.api.SearchForNews(searchQuery)
+
 }
