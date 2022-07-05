@@ -7,8 +7,8 @@
 
     <fragment
         android:id="@+id/navigation_news_home"
-        android:name="com.bootcamp.soccernews.ui.fragments.home.NewsFragment"
-        android:label="@string/title_news"
+        android:name="com.bootcamp.soccernews.ui.fragments.homeFootballNews.NewsFragment"
+        android:label="@string/tittle_soccer_news"
         tools:layout="@layout/fragment_news" >
         <action
             android:id="@+id/action_navigation_news_home_to_navigation_page_news"

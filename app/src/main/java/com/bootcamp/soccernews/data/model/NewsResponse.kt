@@ -5,6 +5,8 @@ import java.io.Serializable
 
 
 data class NewsResponse(
-    @SerializedName("news")
-    val news: List<News>
+    @SerializedName("articles")
+    val news: List<News>,
+    val status: String,
+    val totalResults: Int
 ): Serializable

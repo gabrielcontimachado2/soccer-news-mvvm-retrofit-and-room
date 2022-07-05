@@ -4,7 +4,7 @@
     <item
         android:id="@+id/navigation_news_home"
         android:icon="@drawable/ic_soccer_news"
-        android:title="@string/title_news" />
+        android:title="@string/tittle_soccer_news" />
 
     <item
         android:id="@+id/navigation_favorite_news"

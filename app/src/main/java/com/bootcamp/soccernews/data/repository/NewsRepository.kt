@@ -10,5 +10,4 @@ class NewsRepository(
     suspend fun getAllNews() =
         RetrofitInstance.api.getAllNews()
 
-
 }

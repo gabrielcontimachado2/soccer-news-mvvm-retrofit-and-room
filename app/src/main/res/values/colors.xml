@@ -10,4 +10,6 @@
 
     <!-- Card News Colors-->
     <color name="red">#ff0000</color>
+    <color name="gray_background">#f2f2f2</color>
+
 </resources>

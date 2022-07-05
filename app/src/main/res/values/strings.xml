@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Soccer News</string>
 
-    <string name="title_news">News</string>
+    <string name="tittle_soccer_news">Soccer News</string>
     <string name="title_favorites">Favorites</string>
 
     <!-- Content Description in card-->

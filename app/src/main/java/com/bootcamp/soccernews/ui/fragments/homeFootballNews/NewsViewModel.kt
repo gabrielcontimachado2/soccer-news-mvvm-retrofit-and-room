@@ -1,4 +1,4 @@
-package com.bootcamp.soccernews.ui
+package com.bootcamp.soccernews.ui.fragments.homeFootballNews
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
@@ -18,6 +18,8 @@ class NewsViewModel(
     private val _soccerNews: MutableLiveData<Resource<NewsResponse>> = MutableLiveData()
     val soccerNews: LiveData<Resource<NewsResponse>>
         get() = _soccerNews
+
+    val pageNumber = 1
 
     init {
         getNews()

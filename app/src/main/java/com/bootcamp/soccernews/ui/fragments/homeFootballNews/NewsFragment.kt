@@ -1,22 +1,17 @@
-package com.bootcamp.soccernews.ui.fragments.home
+package com.bootcamp.soccernews.ui.fragments.homeFootballNews
 
-import android.content.Context
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.viewModels
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.bootcamp.soccernews.data.database.local.NewsDataBase
 import com.bootcamp.soccernews.data.repository.NewsRepository
 import com.bootcamp.soccernews.ui.adapter.NewsAdapter
 import com.bootcamp.soccernews.databinding.FragmentNewsBinding
-import com.bootcamp.soccernews.ui.MainActivity
-import com.bootcamp.soccernews.ui.NewsViewModel
 import com.bootcamp.soccernews.ui.factory.NewsViewModelProviderFactory
 import com.bootcamp.soccernews.utils.Resource
 
@@ -41,11 +36,13 @@ class NewsFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-
-
         setupViewModel()
         setupRecyclerViewAdapter()
+        setupObserveNews()
 
+    }
+
+    private fun setupObserveNews() {
         viewModel.soccerNews.observe(viewLifecycleOwner) { response ->
             when (response) {
                 is Resource.Success -> {
@@ -66,7 +63,6 @@ class NewsFragment : Fragment() {
             }
 
         }
-
 
     }
 

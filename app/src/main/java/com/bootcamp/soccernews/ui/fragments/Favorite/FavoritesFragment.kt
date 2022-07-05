@@ -8,8 +8,6 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.bootcamp.soccernews.databinding.FragmentFavoritesBinding
-import com.bootcamp.soccernews.ui.MainActivity
-import com.bootcamp.soccernews.ui.NewsViewModel
 
 class FavoritesFragment : Fragment() {
 
