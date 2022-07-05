@@ -27,7 +27,7 @@ class NewsViewModel(
 
     private fun getNews() = viewModelScope.launch {
         _soccerNews.postValue(Resource.Loading())
-        val response = newsRepository.getAllNews()
+        val response = newsRepository.getFootballNews()
         _soccerNews.postValue(handleSoccerNewsResponse(response))
     }
 

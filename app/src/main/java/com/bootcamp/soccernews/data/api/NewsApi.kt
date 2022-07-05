@@ -7,12 +7,23 @@ import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Query
 
-interface SoccerNewsApi {
+interface NewsApi {
 
-    //@GET("news.json")
-    //suspend fun getAllNews(): Response<NewsResponse>
+    @GET("v2/top-headlines")
+    suspend fun getGeneralNewsBrasil(
+        @Query("country")
+        country: String = "br",
+        @Query("page")
+        pageNumber: Int = 1,
+        @Query("apiKey")
+        apiKey: String = API_KEY,
+        @Query("category")
+        category: String = "general"
+
+    ): Response<NewsResponse>
+
     @GET("v2/everything")
-    suspend fun getAllNews(
+    suspend fun getFootballNews(
         @Query("q")
         searchQuery: String = "Football women",
         @Query("page")

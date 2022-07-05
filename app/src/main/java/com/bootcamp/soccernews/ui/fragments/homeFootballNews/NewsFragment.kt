@@ -38,11 +38,11 @@ class NewsFragment : Fragment() {
 
         setupViewModel()
         setupRecyclerViewAdapter()
-        setupObserveNews()
+        observeNews()
 
     }
 
-    private fun setupObserveNews() {
+    private fun observeNews() {
         viewModel.soccerNews.observe(viewLifecycleOwner) { response ->
             when (response) {
                 is Resource.Success -> {
@@ -82,11 +82,6 @@ class NewsFragment : Fragment() {
         newsRecyclerView.layoutManager = LinearLayoutManager(context)
         newsRecyclerView.adapter = newsAdapter
 
-
-    }
-
-
-    private fun newsObserve() {
 
     }
 
