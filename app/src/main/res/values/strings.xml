@@ -15,5 +15,6 @@
     <string name="title_page_news">News</string>
     <string name="tittle_general_news">General News</string>
     <string name="search">Search</string>
+    <string name="tittle_search">Search News</string>
 
 </resources>

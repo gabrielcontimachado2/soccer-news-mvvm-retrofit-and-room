@@ -9,7 +9,7 @@
         android:id="@+id/navigation_news_home"
         android:name="com.bootcamp.soccernews.ui.fragments.homeFootballNews.NewsFragment"
         android:label="@string/tittle_soccer_news"
-        tools:layout="@layout/fragment_news" >
+        tools:layout="@layout/fragment_news">
         <action
             android:id="@+id/action_navigation_news_home_to_navigation_page_news"
             app:destination="@id/navigation_page_news" />
@@ -19,7 +19,7 @@
         android:id="@+id/navigation_general_news"
         android:name="com.bootcamp.soccernews.ui.fragments.generalNews.GeneralNewsFragment"
         android:label="@string/tittle_general_news"
-        tools:layout="@layout/fragment_news" >
+        tools:layout="@layout/general_news_fragment">
         <action
             android:id="@+id/action_navigation_news_home_to_navigation_page_news"
             app:destination="@id/navigation_page_news" />
@@ -29,11 +29,22 @@
         android:id="@+id/navigation_favorite_news"
         android:name="com.bootcamp.soccernews.ui.fragments.Favorite.FavoritesFragment"
         android:label="@string/title_favorites"
-        tools:layout="@layout/fragment_favorites" >
+        tools:layout="@layout/fragment_favorites">
         <action
             android:id="@+id/action_navigation_favorite_news_to_navigation_page_news"
             app:destination="@id/navigation_page_news" />
     </fragment>
+
+    <fragment
+        android:id="@+id/navigation_search_news"
+        android:name="com.bootcamp.soccernews.ui.fragments.searchNews.SearchNewsFragment"
+        android:label="@string/tittle_search"
+        tools:layout="@layout/search_news_fragment">
+        <action
+            android:id="@+id/action_navigation_favorite_news_to_navigation_page_news"
+            app:destination="@id/navigation_page_news" />
+    </fragment>
+
 
     <fragment
         android:id="@+id/navigation_page_news"

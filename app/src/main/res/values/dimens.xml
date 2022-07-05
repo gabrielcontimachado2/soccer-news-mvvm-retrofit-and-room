@@ -8,6 +8,7 @@
     <dimen name="margin_mini_card">8dp</dimen>
     <dimen name="margin_mini_card_top_bottom">4dp</dimen>
     <dimen name="margin_mini_card_radius">4dp</dimen>
-    <dimen name="height_bottom_navigation">60dp</dimen>
+    <dimen name="height_bottom_navigation">55dp</dimen>
+    <dimen name="text_tittle_card_size">18sp</dimen>
 
 </resources>
