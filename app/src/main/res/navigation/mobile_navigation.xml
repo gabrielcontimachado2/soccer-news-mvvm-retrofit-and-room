@@ -16,6 +16,16 @@
     </fragment>
 
     <fragment
+        android:id="@+id/navigation_general_news"
+        android:name="com.bootcamp.soccernews.ui.fragments.generalNews.GeneralNewsFragment"
+        android:label="@string/tittle_general_news"
+        tools:layout="@layout/fragment_news" >
+        <action
+            android:id="@+id/action_navigation_news_home_to_navigation_page_news"
+            app:destination="@id/navigation_page_news" />
+    </fragment>
+
+    <fragment
         android:id="@+id/navigation_favorite_news"
         android:name="com.bootcamp.soccernews.ui.fragments.Favorite.FavoritesFragment"
         android:label="@string/title_favorites"

@@ -3,14 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/rowi/Desktop/bootCamp/SoccerNews/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/rowi/Desktop/bootCamp/SoccerNews/app/src/main/res/drawable/ic_menu.xml" value="0.2215" />
+        <entry key="..\:/Users/rowi/Desktop/bootCamp/SoccerNews/app/src/main/res/drawable/ic_search.xml" value="0.275" />
+        <entry key="..\:/Users/rowi/Desktop/bootCamp/SoccerNews/app/src/main/res/layout/activity_main.xml" value="0.5" />
         <entry key="..\:/Users/rowi/Desktop/bootCamp/SoccerNews/app/src/main/res/layout/card_news.xml" value="0.5" />
         <entry key="..\:/Users/rowi/Desktop/bootCamp/SoccerNews/app/src/main/res/layout/fragment_favorites.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/rowi/Desktop/bootCamp/SoccerNews/app/src/main/res/layout/fragment_home.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/rowi/Desktop/bootCamp/SoccerNews/app/src/main/res/layout/fragment_news.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/rowi/Desktop/bootCamp/SoccerNews/app/src/main/res/layout/fragment_page_news.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/rowi/Desktop/bootCamp/SoccerNews/app/src/main/res/layout/general_news_fragment.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/rowi/Desktop/bootCamp/SoccerNews/app/src/main/res/layout/page_news_fragment.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/rowi/Desktop/bootCamp/SoccerNews/app/src/main/res/menu/bottom_nav_menu.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/rowi/Desktop/bootCamp/SoccerNews/app/src/main/res/menu/top_nav_menu.xml" value="0.36666666666666664" />
       </map>
     </option>
   </component>

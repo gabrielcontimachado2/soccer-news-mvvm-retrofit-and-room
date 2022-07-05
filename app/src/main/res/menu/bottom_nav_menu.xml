@@ -7,8 +7,14 @@
         android:title="@string/tittle_soccer_news" />
 
     <item
+        android:id="@+id/navigation_general_news"
+        android:icon="@drawable/ic_general_news"
+        android:title="@string/tittle_general_news" />
+
+    <item
         android:id="@+id/navigation_favorite_news"
         android:icon="@drawable/ic_favorite"
         android:title="@string/title_favorites" />
+
 
 </menu>
