@@ -8,14 +8,15 @@
         <entry key="..\:/Users/rowi/Desktop/bootCamp/SoccerNews/app/src/main/res/drawable/ic_search_news.xml" value="0.367" />
         <entry key="..\:/Users/rowi/Desktop/bootCamp/SoccerNews/app/src/main/res/drawable/ic_share.xml" value="0.275" />
         <entry key="..\:/Users/rowi/Desktop/bootCamp/SoccerNews/app/src/main/res/layout/activity_main.xml" value="0.42916666666666664" />
-        <entry key="..\:/Users/rowi/Desktop/bootCamp/SoccerNews/app/src/main/res/layout/card_news.xml" value="0.75" />
+        <entry key="..\:/Users/rowi/Desktop/bootCamp/SoccerNews/app/src/main/res/layout/card_news.xml" value="0.5" />
+        <entry key="..\:/Users/rowi/Desktop/bootCamp/SoccerNews/app/src/main/res/layout/card_news_favorite.xml" value="0.3489583333333333" />
         <entry key="..\:/Users/rowi/Desktop/bootCamp/SoccerNews/app/src/main/res/layout/fragment_favorites.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/rowi/Desktop/bootCamp/SoccerNews/app/src/main/res/layout/fragment_home.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/rowi/Desktop/bootCamp/SoccerNews/app/src/main/res/layout/fragment_news.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/rowi/Desktop/bootCamp/SoccerNews/app/src/main/res/layout/fragment_page_news.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/rowi/Desktop/bootCamp/SoccerNews/app/src/main/res/layout/general_news_fragment.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/rowi/Desktop/bootCamp/SoccerNews/app/src/main/res/layout/page_news_fragment.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/rowi/Desktop/bootCamp/SoccerNews/app/src/main/res/layout/search_news_fragment.xml" value="0.5329295987887964" />
+        <entry key="..\:/Users/rowi/Desktop/bootCamp/SoccerNews/app/src/main/res/layout/general_news_fragment.xml" value="0.37604166666666666" />
+        <entry key="..\:/Users/rowi/Desktop/bootCamp/SoccerNews/app/src/main/res/layout/page_news_fragment.xml" value="0.25" />
+        <entry key="..\:/Users/rowi/Desktop/bootCamp/SoccerNews/app/src/main/res/layout/search_news_fragment.xml" value="0.6001705029838023" />
         <entry key="..\:/Users/rowi/Desktop/bootCamp/SoccerNews/app/src/main/res/menu/bottom_nav_menu.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/rowi/Desktop/bootCamp/SoccerNews/app/src/main/res/menu/top_nav_menu.xml" value="0.36666666666666664" />
       </map>

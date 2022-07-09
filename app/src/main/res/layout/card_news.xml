@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    style="@style/Widget.MaterialComponents.CardView"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginStart="@dimen/margin_mini_card"
@@ -10,8 +9,6 @@
     android:layout_marginBottom="@dimen/margin_mini_card_top_bottom"
     app:cardCornerRadius="@dimen/margin_mini_card"
     app:cardElevation="@dimen/margin_default_card"
-    app:layout_scrollEffect="compress"
-    android:descendantFocusability="afterDescendants"
     app:layout_constraintBaseline_creator="@integer/material_motion_duration_long_2">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -39,7 +36,6 @@
             android:layout_marginTop="@dimen/margin_default_card"
             android:layout_marginEnd="@dimen/margin_default_card"
             android:fontFamily="@font/roboto_condensed_bold"
-            android:text="nadaaa teste"
             android:textColor="@color/black"
             android:textSize="@dimen/text_tittle_card_size"
             android:textStyle="bold"
@@ -55,7 +51,6 @@
             android:layout_marginTop="@dimen/margin_mini_card_top_bottom"
             android:layout_marginEnd="@dimen/margin_default_card"
             android:fontFamily="@font/roboto"
-            android:text="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
             android:textSize="12sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

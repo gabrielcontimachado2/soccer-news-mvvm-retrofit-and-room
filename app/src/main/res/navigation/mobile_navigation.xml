@@ -21,7 +21,7 @@
         android:label="@string/tittle_general_news"
         tools:layout="@layout/general_news_fragment">
         <action
-            android:id="@+id/action_navigation_news_home_to_navigation_page_news"
+            android:id="@+id/action_navigation_general_news_to_navigation_page_news"
             app:destination="@id/navigation_page_news" />
     </fragment>
 
@@ -41,7 +41,7 @@
         android:label="@string/tittle_search"
         tools:layout="@layout/search_news_fragment">
         <action
-            android:id="@+id/action_navigation_favorite_news_to_navigation_page_news"
+            android:id="@+id/action_navigation_search_news_to_navigation_page_news"
             app:destination="@id/navigation_page_news" />
     </fragment>
 
@@ -50,6 +50,10 @@
         android:id="@+id/navigation_page_news"
         android:name="com.bootcamp.soccernews.ui.fragments.pageNews.PageNewsFragment"
         android:label="@string/title_page_news"
-        tools:layout="@layout/page_news_fragment" />
+        tools:layout="@layout/page_news_fragment" >
+        <argument
+            android:name="news"
+            app:argType="com.bootcamp.soccernews.data.model.News" />
+    </fragment>
 
 </navigation>
