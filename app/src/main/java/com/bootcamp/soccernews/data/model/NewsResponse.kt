@@ -6,7 +6,7 @@ import java.io.Serializable
 
 data class NewsResponse(
     @SerializedName("articles")
-    val news: List<News>,
+    val news: MutableList<News>,
     val status: String,
     val totalResults: Int
-): Serializable
+) : Serializable
