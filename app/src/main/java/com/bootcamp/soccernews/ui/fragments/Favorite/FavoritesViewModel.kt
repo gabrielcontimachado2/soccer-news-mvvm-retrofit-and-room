@@ -3,11 +3,36 @@ package com.bootcamp.soccernews.ui.fragments.Favorite
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewModelScope
+import com.bootcamp.soccernews.data.model.News
 
-class FavoritesViewModel : ViewModel() {
+import com.bootcamp.soccernews.data.model.NewsResponse
+import com.bootcamp.soccernews.data.repository.NewsRepository
+import com.bootcamp.soccernews.utils.Resource
+import kotlinx.coroutines.launch
 
-    private val _text = MutableLiveData<String>().apply {
-        value = "This is dashboard Fragment"
+
+class FavoritesViewModel(
+    val newsRepository: NewsRepository
+) : ViewModel() {
+
+    private val _news: MutableLiveData<Resource<NewsResponse>> = MutableLiveData()
+    val news: LiveData<Resource<NewsResponse>>
+        get() = _news
+
+
+    init {
+        getAllNews()
     }
-    val text: LiveData<String> = _text
+
+    fun getAllNews() = newsRepository.getNewsDataBase()
+
+    fun deleteNews(news: News) = viewModelScope.launch {
+        newsRepository.deleteNewsDataBase(news)
+    }
+
+    fun saveNews(news: News) = viewModelScope.launch {
+        newsRepository.upsertNewsDataBase(news)
+    }
+
 }
