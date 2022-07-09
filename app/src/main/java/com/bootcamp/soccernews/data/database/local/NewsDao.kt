@@ -8,12 +8,12 @@ import com.bootcamp.soccernews.data.model.News
 interface NewsDao {
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun upsert( soccerNews: News): Long
+    suspend fun upsert( news: News): Long
 
     @Query("SELECT * FROM news")
     fun getAllNews(): LiveData<List<News>>
 
-    @Delete()
+    @Delete
     suspend fun deleteNews(news: News)
 
 }

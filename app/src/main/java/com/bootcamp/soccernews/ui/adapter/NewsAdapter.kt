@@ -1,9 +1,8 @@
 package com.bootcamp.soccernews.ui.adapter
 
-import android.content.Context
+
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.AsyncListDiffer
@@ -12,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bootcamp.soccernews.data.model.News
 import com.bootcamp.soccernews.databinding.CardNewsBinding
 import com.bumptech.glide.Glide
+
 
 class NewsAdapter : RecyclerView.Adapter<NewsAdapter.NewsViewHolder>() {
 
@@ -24,10 +24,10 @@ class NewsAdapter : RecyclerView.Adapter<NewsAdapter.NewsViewHolder>() {
         override fun areContentsTheSame(oldItem: News, newItem: News): Boolean {
             return oldItem == newItem
         }
+
     }
 
     val differ = AsyncListDiffer(this, differCallBack)
-
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): NewsViewHolder {
         val binding = CardNewsBinding.inflate(LayoutInflater.from(parent.context), parent, false)
@@ -48,12 +48,22 @@ class NewsAdapter : RecyclerView.Adapter<NewsAdapter.NewsViewHolder>() {
             onCardClickListener?.let { it(news) }
         }
 
+        holder.imageFavorite.setOnClickListener {
+            onFavoriteClickListener?.let { it(news) }
+        }
+
     }
 
     private var onCardClickListener: ((News) -> Unit)? = null
 
-    fun setOnCardClickListener(listener: (News) -> Unit) {
+    fun setOnItemClickListener(listener: (News) -> Unit) {
         onCardClickListener = listener
+    }
+
+    private var onFavoriteClickListener: ((News) -> Unit)? = null
+
+    fun setOnFavoriteClickListener(listener: (News) -> Unit) {
+        onFavoriteClickListener = listener
     }
 
     override fun getItemCount(): Int = differ.currentList.size
@@ -66,7 +76,7 @@ class NewsAdapter : RecyclerView.Adapter<NewsAdapter.NewsViewHolder>() {
         var newsDate: TextView = binding.textViewNewsDate
         var tittleNews: TextView = binding.textViewTittleNews
         var descriptionNews: TextView = binding.textViewDescriptionNews
-       // var buttonLink: Button = binding.buttonOpenNews
+        // var buttonLink: Button = binding.buttonOpenNews
 
     }
 

@@ -11,10 +11,10 @@ interface NewsApi {
 
     @GET("v2/top-headlines")
     suspend fun getGeneralNewsBrasil(
+        @Query("page")
+        pageNumber: Int,
         @Query("country")
         country: String = "br",
-        @Query("page")
-        pageNumber: Int = 1,
         @Query("apiKey")
         apiKey: String = API_KEY,
         @Query("category")
@@ -23,11 +23,11 @@ interface NewsApi {
     ): Response<NewsResponse>
 
     @GET("v2/everything")
-    suspend fun getFootballNews(
+    suspend fun getSoccerNews(
+        @Query("page")
+        pageNumber: Int,
         @Query("q")
         searchQuery: String = "Football women",
-        @Query("page")
-        pageNumber: Int = 1,
         @Query("apiKey")
         apiKey: String = API_KEY
     ): Response<NewsResponse>
@@ -37,7 +37,7 @@ interface NewsApi {
         @Query("q")
         searchQuery: String,
         @Query("page")
-        pageNumber: Int = 1,
+        pageNumber: Int,
         @Query("apiKey")
         apiKey: String = API_KEY
     ): Response<NewsResponse>
